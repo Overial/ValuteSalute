@@ -1,0 +1,52 @@
+﻿<!--
+	ValuteSalute
+	2022
+-->
+
+<!DOCTYPE HTML>
+<!--
+	Halcyonic by HTML5 UP
+-->
+<html>
+	<head>
+		@await Html.PartialAsync("MetatagsPartial")
+		@await Html.PartialAsync("CssPartial")
+	</head>
+	<body class="subpage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			@await Html.PartialAsync("HeaderPartial")
+
+			<!-- Content -->
+				<section id="content">
+					<div class="container">
+						<div class="row">
+							<div class="col-3 col-12-medium">
+
+								<!-- Sidebar -->
+								@await Html.PartialAsync("SidebarPartial")
+
+							</div>
+							<div class="col-9 col-12-medium imp-medium">
+
+								<!-- Main Content -->
+								@RenderBody()
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+			@await Html.PartialAsync("FooterPartial")
+
+			<!-- Copyright -->
+			@await Html.PartialAsync("CopyrightPartial")
+
+		</div>
+
+		<!-- Scripts -->
+		@await Html.PartialAsync("ScriptsPartial")
+
+	</body>
+</html>
